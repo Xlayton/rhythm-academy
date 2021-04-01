@@ -1,0 +1,33 @@
+{
+  "name": "rythm-academy-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "GameServer.js",
+  "scripts": {
+    "start": "babel-node src/ServerController.ts --extensions \".ts\"",
+    "test:unit": "jest --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-transform-typescript": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/body-parser": "^1.19.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/socket.io": "^2.1.13",
+    "typescript": "^4.2.3"
+  }
+}
