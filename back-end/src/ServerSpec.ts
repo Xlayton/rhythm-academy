@@ -1,4 +1,4 @@
 export interface ServerSpec {
-    start(): void
-    stop(): void
+  start(): void;
+  stop(): void;
 }

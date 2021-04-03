@@ -1,6 +1,6 @@
 import { GameServer } from "./GameServer";
 import { ApiServer } from "./ApiServer";
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 
 dotenv.config();
 
