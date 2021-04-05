@@ -9,7 +9,11 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/", name: "home", component: HomePage },
-  { path: "/game", name: "game", component: GamePage },
+  {
+    path: "/game",
+    name: "game",
+    component: GamePage,
+  },
 ];
 
 const router = new VueRouter({ routes });

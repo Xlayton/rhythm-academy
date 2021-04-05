@@ -4,7 +4,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import GameCanvas from "../components/GameCanvas.vue";
 
 @Component
 export default class HomePage extends Vue {}
