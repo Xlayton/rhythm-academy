@@ -251,24 +251,24 @@ export default class GameCanvas extends Vue {
       (n) => !(n.time === note.time && n.lane === n.lane)
     );
     if (Math.abs(note.time - timeHit) > 0.75) {
-      document.getElementById("HitPrompt").innerHTML =
+      (document.getElementById("HitPrompt") as HTMLParagraphElement).innerHTML =
         "<span class='poor'>Poor</span> <span class='score'>25</span>";
       this.score += 25;
     } else if (Math.abs(note.time - timeHit) > 0.5) {
-      document.getElementById("HitPrompt").innerHTML =
+      (document.getElementById("HitPrompt") as HTMLParagraphElement).innerHTML =
         "<span class='good'>Good</span> <span class='score'>50</span>";
       this.score += 50;
     } else if (Math.abs(note.time - timeHit) > 0.25) {
-      document.getElementById("HitPrompt").innerHTML =
+      (document.getElementById("HitPrompt") as HTMLParagraphElement).innerHTML =
         "<span class='excellent'>Excellent</span> <span class='score'>75</span>";
       this.score += 75;
     } else if (Math.abs(note.time - timeHit) > 0.15) {
-      document.getElementById("HitPrompt").innerHTML =
+      (document.getElementById("HitPrompt") as HTMLParagraphElement).innerHTML =
         "<span class='perfect'>Perfect</span> <span class='score'>100</span>";
       this.score += 100;
     }
     this.clearScore = setTimeout(
-      () => (document.getElementById("HitPrompt").innerHTML = ""),
+      () => ((document.getElementById("HitPrompt") as HTMLParagraphElement).innerHTML = ""),
       2500
     );
   }
